@@ -80,7 +80,7 @@ export const myProjects = [
       {
         id: 2,
         name: 'Java',
-        path: 'assets/java.png',
+        path: '/assets/java.png',
       },
       {
         id: 3,
@@ -116,7 +116,7 @@ export const myProjects = [
       {
         id: 2,
         name: 'Python',
-        path: 'assets/python.png',
+        path: '/assets/python.png',
       },
       {
         id: 3,
