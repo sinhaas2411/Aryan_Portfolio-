@@ -11,11 +11,16 @@ export const navLinks = [
   },
   {
     id: 3,
-    name: 'Work',
+    name: 'Experience',
     href: '#work',
   },
   {
     id: 4,
+    name: 'Projects',
+    href: '#projects',
+  },
+  {
+    id: 5,
     name: 'Contact',
     href: '#contact',
   },
@@ -27,42 +32,37 @@ export const clientReviews = [
     name: 'Emily Johnson',
     position: 'Marketing Director at GreenLeaf',
     img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+    review: "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects."
   },
   {
     id: 2,
     name: 'Mark Rogers',
     position: 'Founder of TechGear Shop',
     img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+    review: "Adrian's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional! Fantastic work."
   },
   {
     id: 3,
     name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
+    position: 'Project Manager at UrbanTech',
     img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+    review: "I can't say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding."
   },
   {
     id: 4,
     name: 'Ether Smith',
     position: 'CEO of BrightStar Enterprises',
     img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-  },
+    review: "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch."
+  }
 ];
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    title: 'Park & Ride: Smart Urban Mobility Platform',
+    desc: 'A comprehensive Spring Boot microservice ecosystem integrating Leaflet.js and OpenStreetMap for urban mobility solutions. Features include data-driven ride-sharing services and real-time analytics dashboard.',
+    subdesc: 'Built with Spring Boot, Spring Data JPA, Leaflet.js, and Bootstrap, serving 1,000+ simulated users with real-time analytics and congestion simulation.',
+    href: 'https://github.com/sinhaas2411/park-and-ride',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
@@ -74,32 +74,31 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Spring Boot',
+        path: '/assets/spring.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Java',
+        path: 'assets/java.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Leaflet.js',
+        path: '/assets/leaflet.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Bootstrap',
+        path: '/assets/bootstrap.png',
       },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    title: 'Conversational AI Chatbot',
+    desc: 'An advanced Amazon Lex-Lambda chatbot processing 100+ intents with 98% accuracy across 1,000+ interaction scenarios. Integrated with Twilio for enhanced user engagement.',
+    subdesc: 'Built with Amazon Lex v2, AWS Lambda, Boto3, and Twilio, demonstrating 25% improvement in user engagement metrics and 20% reduction in booking interaction times.',
+    href: 'https://drive.google.com/file/d/174fRxY9w1NT4UQxmYM9QLoRmk9O7Ucrq/view',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/project-logo2.png',
     logoStyle: {
@@ -111,139 +110,26 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'AWS Lex',
+        path: '/assets/aws.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Python',
+        path: 'assets/python.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Boto3',
+        path: '/assets/boto3.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Twilio',
+        path: '/assets/twilio.png',
       },
     ],
-  },
-  {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
-    logoStyle: {
-      backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    },
-    spotlight: '/assets/spotlight3.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
-    logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
-    },
-    spotlight: '/assets/spotlight4.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
+  }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -260,29 +146,60 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    name: 'Enterprise Cloud Solutions',
+    pos: 'Cloud Computing Intern',
+    duration: 'May 2024 - Jul 2024',
+    title: "Engineered 5+ AWS Lambda and Amazon Lex prototypes, enhancing system scalability by 20% across multi-cloud environments. Optimized data processing workflows using Boto3, achieving 30% performance improvement.",
+    icon: '/assets/aws.svg',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    name: 'Google Developer Student Clubs',
+    pos: 'AI & Software Development Trainee',
+    duration: 'May 2024',
+    title: "Developed 3 advanced generative AI models using PyTorch, ranking in top 16% (80/500+) of Generative AI Challenge. Implemented comprehensive unit testing strategy, improving code precision by 20%.",
+    icon: '/assets/google.svg',
     animation: 'clapping',
   },
+];
+
+export const skills = [
   {
-    id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
-    animation: 'salute',
+    category: 'Programming Languages',
+    items: ['Java', 'Python', 'JavaScript', 'C++']
   },
+  {
+    category: 'Cloud Technologies',
+    items: ['AWS Lambda', 'Amazon Lex', 'Boto3', 'Terraform', 'Kubernetes']
+  },
+  {
+    category: 'Frameworks & Libraries',
+    items: ['Spring Boot', 'React', 'Node.js', 'Flutter']
+  },
+  {
+    category: 'Databases',
+    items: ['MongoDB', 'MySQL', 'H2']
+  },
+  {
+    category: 'Developer Tools',
+    items: ['Git', 'Docker', 'Jenkins', 'CI/CD Pipelines']
+  }
+];
+
+export const education = [
+  {
+    school: 'Bennett University',
+    location: 'Greater Noida, India',
+    degree: 'Bachelor of Science in Computer Science',
+    duration: 'Sep 2022 - Present',
+    gpa: 'CGPA: 7.92/10.0'
+  },
+  {
+    school: 'St. Thomas College',
+    location: 'Lucknow, India',
+    degree: 'High School Diploma',
+    duration: 'May 2022',
+    achievement: 'Academic Excellence Award'
+  }
 ];

@@ -2,12 +2,13 @@ import { useState } from 'react';
 import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
+import { skills, education } from '../constants';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' adrian@jsmastery.pro');
+    navigator.clipboard.writeText('aaryan.sinha2411@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -23,10 +24,9 @@ const About = () => {
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Adrian Hajdin</p>
+              <p className="grid-headtext">Hi, I'm Aryan</p>
               <p className="grid-subtext">
-                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+                An innovative Computer Science student with expertise in cloud computing, AI development, and full-stack software engineering.
               </p>
             </div>
           </div>
@@ -37,11 +37,15 @@ const About = () => {
             <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
-              </p>
+              <p className="grid-headtext">Technical Expertise</p>
+              <div className="grid-subtext space-y-2">
+                {skills.map((category, index) => (
+                  <div key={index} className="mb-2">
+                    <p className="font-semibold text-gray-300">{category.category}:</p>
+                    <p className="text-gray-400">{category.items.join(', ')}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -58,13 +62,26 @@ const About = () => {
                 showGraticules
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                labelsData={[{ lat: 28.6139, lng: 77.2090, text: 'Greater Noida, India', color: 'white', size: 15 }]}
               />
             </div>
             <div>
-              <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">I&apos;m based in Rjieka, Croatia and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <p className="grid-headtext">Education</p>
+              <div className="grid-subtext space-y-4">
+                {education.map((edu, index) => (
+                  <div key={index} className="mb-2">
+                    <p className="font-semibold text-gray-300">{edu.school}</p>
+                    <p className="text-gray-400">{edu.location}</p>
+                    <p className="text-gray-400">{edu.degree}</p>
+                    <p className="text-gray-400">{edu.duration}</p>
+                    {edu.gpa && <p className="text-gray-400">{edu.gpa}</p>}
+                    {edu.achievement && <p className="text-gray-400">{edu.achievement}</p>}
+                  </div>
+                ))}
+              </div>
+              <a href="#projects">
+                <Button name="View Projects" isBeam containerClass="w-full mt-10" />
+              </a>
             </div>
           </div>
         </div>
@@ -74,10 +91,11 @@ const About = () => {
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
+              <p className="grid-headtext">My Passion for Technology</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                I'm passionate about leveraging cutting-edge technologies to solve real-world problems. 
+                My focus on cloud computing, AI, and full-stack development allows me to create innovative solutions 
+                that drive operational efficiency and technological innovation.
               </p>
             </div>
           </div>
@@ -93,9 +111,11 @@ const About = () => {
 
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">adrian@jsmastery.pro</p>
+              <div className="flex items-center gap-3">
+                <button className="copy-btn" onClick={handleCopy}>
+                  <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">aaryan.sinha2411@gmail.com</p>
+                  <img src={hasCopied ? '/assets/tick.svg' : '/assets/copy.svg'} alt="copy" className="w-6 h-6" />
+                </button>
               </div>
             </div>
           </div>

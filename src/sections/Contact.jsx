@@ -26,9 +26,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'Aryan',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          to_email: 'aaryan.sinha2411@gmail.com',
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
@@ -71,11 +71,11 @@ const Contact = () => {
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
 
-        <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
+        <div className="contact-container mt-40">
+          <h3 className="head-text">Let's Connect</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            Whether you're interested in cloud computing, AI development, or full-stack engineering, let's create something amazing together.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
@@ -101,7 +101,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
+                placeholder="ex., aaryan.sinha2411@gmail.com"
               />
             </label>
 
