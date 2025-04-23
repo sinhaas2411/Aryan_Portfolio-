@@ -25,7 +25,6 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <div className="flex items-center gap-2">
-            <img src="/assets/jsm-logo.png" alt="logo" className="w-10 h-10" />
             <p className="text-white text-lg font-bold">Aryan</p>
           </div>
 
