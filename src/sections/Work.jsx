@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { workExperiences } from '../constants';
 
 const Work = () => {
@@ -14,11 +13,8 @@ const Work = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {workExperiences.map((experience, index) => (
-            <motion.div
+            <div
               key={experience.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-[#1d1836] p-6 rounded-2xl hover:bg-[#2a1f4a] transition-colors duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
@@ -30,7 +26,7 @@ const Work = () => {
               </div>
               <p className="text-gray-400 mb-4">{experience.duration}</p>
               <p className="text-gray-300">{experience.title}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
